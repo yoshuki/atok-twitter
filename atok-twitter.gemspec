@@ -26,9 +26,13 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "atok-twitter.gemspec",
+     "bin/atok-twitter-install",
      "lib/atok/twitter/installer.rb",
+     "plugin/ATOK_PLUGIN_MESSAGE.DLL",
+     "plugin/DATA/twitter.xml",
      "plugin/DATA/twitter_wo_login_info.rb",
      "plugin/SETUP.EXE",
+     "plugin/SETUPINFO.XML",
      "spec/atok-twitter_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
