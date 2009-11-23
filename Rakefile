@@ -12,6 +12,11 @@ begin
     gem.authors = ["MIKAMI Yoshiyuki"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.platform = 'x86-mswin32'
+    gem.add_dependency 'nokogiri', '>= 1.4.0'
+    gem.executables = ['atok-twitter-install']
+    gem.default_executable = 'atok-twitter-install'
+    gem.files.include 'lib/**/*.rb', 'plugin/**/*'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

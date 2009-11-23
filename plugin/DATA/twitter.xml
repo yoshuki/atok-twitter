@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin_info>
+  <name>Twitter</name>
+  <name_short>Twitter</name_short>
+  <description>Twitterクライアントです。</description>
+  <copyright>Copyright (C) 2009 yoshuki</copyright>
+  <major_version>0</major_version>
+  <minor_version>5</minor_version>
+  <callback>true</callback>
+</plugin_info>

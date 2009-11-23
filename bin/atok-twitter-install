@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+require 'atok/twitter/installer'
+
+plugin_root = File.join(File.dirname(__FILE__), '..', 'plugin')
+ATOK::Twitter::Installer.new(plugin_root).install
