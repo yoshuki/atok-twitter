@@ -1,5 +1,5 @@
+require 'drb'
 require 'net/http'; Net::HTTP.version_1_2
-require 'rinda/ring'
 require 'time'
 require 'rubygems'
 require 'nokogiri'
