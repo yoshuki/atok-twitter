@@ -16,7 +16,7 @@ class TupleServer
   end
 
   def write(tuple, time_out=true)
-    @logger.info("WRITE: #{tuple.inspect}")
+    @logger.debug("WRITE: #{tuple.inspect}")
     if time_out
       @ts.write(tuple, TIME_OUT)
     else
@@ -25,7 +25,7 @@ class TupleServer
   end
 
   def take(pattern, time_out=true, &block)
-    @logger.info("TAKE:  #{pattern.inspect}")
+    @logger.debug("TAKE:  #{pattern.inspect}")
     if time_out
       @ts.take(pattern, TIME_OUT, &block)
     else
@@ -34,7 +34,7 @@ class TupleServer
   end
 
   def read(pattern, time_out=true)
-    @logger.info("READ:  #{pattern.inspect}")
+    @logger.debug("READ:  #{pattern.inspect}")
     if time_out
       @ts.read(pattern, TIME_OUT)
     else
@@ -43,12 +43,12 @@ class TupleServer
   end
 
   def read_all(pattern)
-    @logger.info("READ_ALL: #{pattern.inspect}")
+    @logger.debug("READ_ALL: #{pattern.inspect}")
     @ts.read_all(pattern)
   end
 
   def notify(event, pattern, time_out=true)
-    @logger.info("NOTIFY: #{pattern.inspect}")
+    @logger.debug("NOTIFY: #{pattern.inspect}")
     if time_out
       @ts.notify(event, pattern, TIME_OUT)
     else

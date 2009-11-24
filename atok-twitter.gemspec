@@ -43,7 +43,12 @@ Gem::Specification.new do |s|
      "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/yoshuki/atok-twitter}
-  s.post_install_message = %q{Please execute to install: atok-twitter-install}
+  s.post_install_message = %q{
+
+※※※ atok-twitter-install を実行してプラグインをインストールしてください。 ※※※
+
+
+}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}

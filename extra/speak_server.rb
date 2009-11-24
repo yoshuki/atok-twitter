@@ -28,7 +28,7 @@ when 'start', 'startlocal'
 
       while message = ts.take([:message, String], false)
         puts message[1].tosjis
-        logger.info(message[1].tosjis)
+        logger.debug(message[1].tosjis)
         AquesTalk::Da.play_sync(message[1].tosjis, 100)
         retries.clear
       end

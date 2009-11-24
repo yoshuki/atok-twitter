@@ -18,7 +18,7 @@ begin
     gem.default_executable = 'atok-twitter-install'
     gem.files.exclude '**/*.log'
     gem.files.include 'lib/**/*.rb', 'plugin/**/*', 'extra/**/*'
-    gem.post_install_message = 'Please execute to install: atok-twitter-install'
+    gem.post_install_message = "\n\n※※※ atok-twitter-install を実行してプラグインをインストールしてください。 ※※※\n\n\n"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
