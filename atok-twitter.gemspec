@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["MIKAMI Yoshiyuki"]
-  s.date = %q{2009-11-24}
+  s.date = %q{2009-11-25}
   s.default_executable = %q{atok-twitter-install}
   s.description = %q{Twitter client on ATOK.}
   s.email = %q{yoshuki@saikyoline.jp}
@@ -27,6 +27,11 @@ Gem::Specification.new do |s|
      "VERSION",
      "atok-twitter.gemspec",
      "bin/atok-twitter-install",
+     "extra/README",
+     "extra/log/README",
+     "extra/speak_server.rb",
+     "extra/start_servers.bat",
+     "extra/tuple_server.rb",
      "lib/atok/twitter/installer.rb",
      "plugin/ATOK_PLUGIN_MESSAGE.DLL",
      "plugin/DATA/twitter.xml",
@@ -38,6 +43,7 @@ Gem::Specification.new do |s|
      "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/yoshuki/atok-twitter}
+  s.post_install_message = %q{Please execute to install: atok-twitter-install}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}

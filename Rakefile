@@ -16,7 +16,9 @@ begin
     gem.add_dependency 'nokogiri', '>= 1.4.0'
     gem.executables = ['atok-twitter-install']
     gem.default_executable = 'atok-twitter-install'
-    gem.files.include 'lib/**/*.rb', 'plugin/**/*'
+    gem.files.exclude '**/*.log'
+    gem.files.include 'lib/**/*.rb', 'plugin/**/*', 'extra/**/*'
+    gem.post_install_message = 'Please execute to install: atok-twitter-install'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
