@@ -2,6 +2,14 @@
 
 Twitter client on ATOK.
 
+== How to use
+
+[つぶやく]
+  tw: または ｔｗ： に続けてつぶやき
+  例）ｔｗ：ハラヘッタ
+[タイムラインを見る]
+  twtl または ｔｗｔｌ
+
 == Note on Patches/Pull Requests
 
 * Fork the project.
